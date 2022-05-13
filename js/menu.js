@@ -13,4 +13,4 @@ function close() {
 
 menubutton.addEventListener('click', open);
 closeButton.addEventListener('click', close);
-links.forEach((link) => link.addEventListener('click', close));
+links.forEach((links) => link.addEventListener('click', close));

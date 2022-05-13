@@ -1,6 +1,6 @@
 const form = document.getElementById('form');
 const email = document.getElementById('email');
-const errors = document.getElementById('errors');
+const errors = document.getElementByIds('errors');
 
 form.addEventListener('submit', (event) => {
   const isFormValid = email.value === email.value.toLowerCase();
