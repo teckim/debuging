@@ -1,0 +1,8 @@
+.social-stack {
+  display: flex;
+  align-items: flex-end;
+}
+
+.social-stack:not(.social-stack--no-gap) > *:not(:last-child) {
+  margin-right: 12px;
+}

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hakim Portfolio</title>
+
+    <!-- Global styles -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <!-- components -->
+    <link rel="stylesheet" href="./css/elements/button.css" />
+    <!-- components -->
+    <link rel="stylesheet" href="./css/components/toolbar.css" />
+    <link rel="stylesheet" href="./css/components/social-stack.css" />
+    <link rel="stylesheet" href="./css/components/headline.css" />
+    <link rel="stylesheet" href="./css/components/project-card.css" />
+    <link rel="stylesheet" href="./css/components/project-modal.css" />
+    <link rel="stylesheet" href="./css/components/about-me.css" />
+    <link rel="stylesheet" href="./css/components/contact.css" />
+    <!-- utilities -->
+    <link rel="stylesheet" href="./css/utilities/layout.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="toolbar container">
+        <div class="toolbar__logo-wrapper">
+          <a href="/" class="toolbar__logo">Hakim</a>
+        </div>
+        <nav>
+          <button class="toolbar__menu-button" type="button">
+            <img src="./assets/icons/menu.svg" alt="Menu icon" />
+          </button>
+          <div class="toolbar__links-list-container">
+            <button class="toolbar__close-button" type="button">
+              <img src="./assets/icons/close.svg" alt="Close icon" />
+            </button>
+            <ul class="toolbar__links-list">
+              <li class="toolbar__links-list-item"><a href="#portfolio">Portfolio</a></li>
+              <li class="toolbar__links-list-item"><a href="#about">About</a></li>
+              <li class="toolbar__links-list-item"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="headline">
+      <div class="headline__wrapper container">
+        <h1 class="headline__title">
+          I’m Hakim <br />
+          Glad to see you!
+        </h1>
+        <p class="headline__text">
+          I’m a software developer! I can help you build a product, feature or
+          website. Look through some of my work and experience! If you like what
+          you see and have a project you need coded, don’t hestiate to contact
+          me.
+        </p>
+        <h2 class="headline__subtitle">LET’S CONNECT</h2>
+        <ul class="social-stack">
+          <li>
+            <a>
+              <img src="./assets/icons/twitter.svg" alt="twitter icon" />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="./assets/icons/linkedin.svg" alt="linkedin icon" />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="./assets/icons/medium.svg" alt="medium icon" />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="./assets/icons/github.svg" alt="github icon" />
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="./assets/icons/angel-list.svg" alt="angeList icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="project-modal" id="modal">
+        <div class="project-modal__container">
+          <button class="project-modal__close-button" type="button">
+            <img src="./assets/icons/close-black.svg" alt="Close modal icon" />
+          </button>
+          <div class="project-modal__header">
+            <h2 class="project-modal__header-title">Tonic</h2>
+            <div class="project-modal__header-subtitle">
+              <span>CANOPY</span>
+              <span>Back End Dev</span>
+              <span>2015</span>
+            </div>
+          </div>
+          <div class="project-modal__image-container">
+            <img
+              class="project-modal__image"
+              src="./assets/images/snapshoot-1.jpg"
+              alt="Snapshoot 1"
+            />
+          </div>
+          <div class="project-modal__body">
+            <p class="project-modal__description">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essent
+            </p>
+            <ul class="project-modal__tags-list">
+              <li class="project-modal__tags-list-item">html</li>
+              <li class="project-modal__tags-list-item">css</li>
+              <li class="project-modal__tags-list-item">javascript</li>
+            </ul>
+            <hr class="project-modal__separator">
+            <div class="project-modal__actions">
+              <button class="button" type="button">
+                <span>See Live</span>
+                <img class="button__icon" src="./assets/icons/external-link.svg" alt="External link icon">
+              </button>
+              <button class="button" type="button">
+                <span>See Source</span>
+                <img class="button__icon" src="./assets/icons/github-primary.svg" alt="Github primary icon">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio" class="works container">
+      <div class="project-card">
+        <img
+          class="project-card__image"
+          src="./assets/images/snapshoot-1.jpg"
+          alt="Snapshoot 1"
+        />
+        <div class="project-card__body">
+          <div class="project-card__header">
+            <h2 class="project-card__header-title">Tonic</h2>
+            <div class="project-card__header-subtitle">
+              <span>CANOPY</span>
+              <span>Back End Dev</span>
+              <span>2015</span>
+            </div>
+          </div>
+          <p class="project-card__description">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="project-card__tags-list">
+            <li class="project-card__tags-list-item">html</li>
+            <li class="project-card__tags-list-item">css</li>
+            <li class="project-card__tags-list-item">javascript</li>
+          </ul>
+          <div class="project-card__actions">
+            <button class="button" type="button">See Project</button>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img
+          class="project-card__image"
+          src="./assets/images/snapshoot-2.jpg"
+          alt="Snapshoot 2"
+        />
+        <div class="project-card__body">
+          <div class="project-card__header">
+            <h2 class="project-card__header-title">Multi-Post Stories</h2>
+            <div class="project-card__header-subtitle">
+              <span>CANOPY</span>
+              <span>Back End Dev</span>
+              <span>2015</span>
+            </div>
+          </div>
+          <p class="project-card__description">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="project-card__tags-list">
+            <li class="project-card__tags-list-item">html</li>
+            <li class="project-card__tags-list-item">css</li>
+            <li class="project-card__tags-list-item">javascript</li>
+          </ul>
+          <div class="project-card__actions">
+            <button class="button" type="button">See Project</button>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img
+          class="project-card__image"
+          src="./assets/images/snapshoot-3.jpg"
+          alt="Snapshoot 3"
+        />
+        <div class="project-card__body">
+          <div class="project-card__header">
+            <h2 class="project-card__header-title">Tonic</h2>
+            <div class="project-card__header-subtitle">
+              <span>CANOPY</span>
+              <span>Back End Dev</span>
+              <span>2015</span>
+            </div>
+          </div>
+          <p class="project-card__description">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="project-card__tags-list">
+            <li class="project-card__tags-list-item">html</li>
+            <li class="project-card__tags-list-item">css</li>
+            <li class="project-card__tags-list-item">javascript</li>
+          </ul>
+          <div class="project-card__actions">
+            <button class="button" type="button">See Project</button>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img
+          class="project-card__image"
+          src="./assets/images/snapshoot-4.jpg"
+          alt="Snapshoot 4"
+        />
+        <div class="project-card__body">
+          <div class="project-card__header">
+            <h2 class="project-card__header-title">Multi-Post Stories</h2>
+            <div class="project-card__header-subtitle">
+              <span>CANOPY</span>
+              <span>Back End Dev</span>
+              <span>2015</span>
+            </div>
+          </div>
+          <p class="project-card__description">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="project-card__tags-list">
+            <li class="project-card__tags-list-item">html</li>
+            <li class="project-card__tags-list-item">css</li>
+            <li class="project-card__tags-list-item">javascript</li>
+          </ul>
+          <div class="project-card__actions">
+            <button class="button" type="button">
+              See Project
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about">
+      <div class="about-me container">
+        <div class="about-me__body">
+          <div class="about-me__title">
+            <h2>
+              About <br />
+              Myself
+            </h2>
+          </div>
+          <div class="about-me__text">
+            <p>
+              Hello I’m a software developer! I can help you build a product,
+              feature or website Look through some of my work and experience! If
+              you like what you see and have a project you need coded, don’t
+              hestiate to contact me.
+            </p>
+          </div>
+          <div class="about-me__actions">
+            <h3 class="about-me__subtitle">LET’S CONNECT</h3>
+            <ul class="social-stack social-stack--no-gap">
+              <li>
+                <a class="icon-botton">
+                  <img src="./assets/icons/github.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a class="icon-botton">
+                  <img src="./assets/icons/linkedin.svg" alt="footer linkedin icon" />
+                </a>
+              </li>
+              <li>
+                <a class="icon-botton">
+                  <img src="./assets/icons/angel-list.svg" alt="footer angeList icon" />
+                </a>
+              </li>
+              <li>
+                <a class="icon-botton">
+                  <img src="./assets/icons/twitter.svg" alt="footer twitter icon" />
+                </a>
+              </li>
+              <li>
+                <a class="icon-botton">
+                  <img src="./assets/icons/medium.svg" alt="footer medium icon" />
+                </a>
+              </li>
+            </ul>
+            <div>
+              <button class="button" type="button">Get my resume</button>
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <div class="about-me__skills-group__item">
+              <div>Languages</div>
+              <button class="icon-button" type="button">
+                <img
+                  src="./assets/icons/chevron-down.svg"
+                  alt="Chevron down icon"
+                />
+              </button>
+            </div>
+            <ul class="about-me__skills-list">
+              <li class="about-me__skills-list__item">
+                <div class="about-me__skills-list__item-image">
+                  <img src="./assets/images/js.png" alt="JS" />
+                </div>
+                <div class="about-me__skills-list__item-label">JavaScript</div>
+              </li>
+              <li class="about-me__skills-list__item">
+                <div class="about-me__skills-list__item-image">
+                  <img src="./assets/images/html.png" alt="HTML" />
+                </div>
+                <div class="about-me__skills-list__item-label">HTML</div>
+              </li>
+              <li class="about-me__skills-list__item">
+                <div class="about-me__skills-list__item-image">
+                  <img src="./assets/images/css.png" alt="CSS" />
+                </div>
+                <div class="about-me__skills-list__item-label">CSS</div>
+              </li>
+            </ul>
+          </li>
+          <li><hr /></li>
+          <li>
+            <div class="about-me__skills-group__item">
+              <div>Frameworks</div>
+              <button class="icon-button" type="button">
+                <img
+                  src="./assets/icons/chevron-right.svg"
+                  alt="Chevron down icon"
+                />
+              </button>
+            </div>
+          </li>
+          <li><hr /></li>
+          <li>
+            <div class="about-me__skills-group__item">
+              <div>Skills</div>
+              <button class="icon-button" type="button">
+                <img
+                  src="./assets/icons/chevron-right.svg"
+                  alt="Chevron down icon"
+                />
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer id="contact" class="footer">
+      <div class="contact">
+        <div class="contact__wrapper">
+          <div class="contact__headline">
+            <h2 class="contact__headline-title">Contact me</h2>
+            <p class="contact__headline-text">
+              If you have an application you are interested in developing, a
+              feature that you need built or a project that needs coding. I’d
+              love to help with it
+            </p>
+          </div>
+          <form
+            id="form"
+            class="contact__form"
+            action="https://formspree.io/f/mrgjopje"
+            method="post"
+          >
+            <input
+              class="contact__form-input"
+              type="text"
+              placeholder="Your name"
+              name="name"
+              maxlength="30"
+              required
+            />
+            <input
+              id="email"
+              class="contact__form-input"
+              type="email"
+              placeholder="Your email"
+              name="email"
+              required
+            />
+            <textarea
+              class="contact__form-input"
+              placeholder="Write your message here"
+              maxlength="500"
+              rows="5"
+              name="message"
+              required
+            ></textarea>
+            <small class="contact__form-errors" id="errors"></small>
+            <button
+              class="contact__form-button button button--secondary"
+              type="submit"
+            >
+              Get In Touch
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/menu.js"></script>
+    <script src="./js/contactForm.js"></script>
+    <script src="./js/projects.js"></script>
+  </body>
+</html>
